@@ -1,10 +1,13 @@
 import React from 'react';
 
+import LeftPart from 'src/components/LeftPart';
+import RightPart from 'src/components/RightPart';
 import './app.scss';
 
 const App = () => (
   <div className="app">
-    <h1>Composant : App</h1>
+    <LeftPart />
+    <RightPart />
   </div>
 );
 

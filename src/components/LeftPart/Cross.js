@@ -2,7 +2,12 @@ import React from 'react';
 
 const Cross = () => (
   <div className="cross">
-    <h1>Composant : Cross</h1>
+    <div className="buttons">
+      <button type="button" className="up">u</button>
+      <button type="button" className="down">d</button>
+      <button type="button" className="right">r</button>
+      <button type="button" className="left">l</button>
+    </div>
   </div>
 );
 
