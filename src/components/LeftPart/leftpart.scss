@@ -1,0 +1,94 @@
+@import 'src/styles/vars';
+
+// Left Part style, including the header
+.leftpart {
+  background-color: $mainColor;
+  border: 1px solid $mainBorders;
+  
+  // Header style
+  .header {
+    border: 1px solid $mainBorders;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    // Separating in two parts to design a specific shape
+    .left {
+      width: 50%;
+      height: 7rem;
+      display: flex;
+
+      // I had to add the overflow hidden because my margin-tops below were acting on the whole parent elements
+      overflow: hidden;
+
+      // Blue light styling
+      // White border styling
+      .radar {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+        background-color: $radarBorder;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        border: 1px solid $mainBorders;
+        // Same reason as before :
+        overflow: hidden;
+
+        // Main blue part styling
+        .bluepart {
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 50%;
+          border: 1px solid $mainBorders;
+          margin: auto;
+          margin-top: 0.3rem;
+          background-color: $radarMain;
+          overflow: hidden;
+
+          // Some light effect inside the radar
+          .light {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: $radarLight;
+            border-radius: 50%;
+            margin-left: 0.3rem;
+            margin-top: 0.3rem;
+          }
+        }
+      }
+
+      // Small lights styling
+      .lights {
+        display: flex; 
+        padding-left: 1rem;
+
+        // Common className to all three lights to define the common features
+        .small {
+          width: 0.7rem;
+          height: 0.7rem;
+          border-radius: 50%;
+          border: 1px solid $mainBorders;
+          margin: 0.3rem;
+        }
+
+        // Individual colors for each light
+        .red {
+          background-color: $redLight;
+
+        }
+
+        .yellow {
+          background-color: $yellowLight;
+
+        }
+
+        .green {
+          background-color: $greenLight;
+
+        }
+      }
+    }
+
+    // Right part styling 
+    .right {
+      
+    }
+  }
+}
