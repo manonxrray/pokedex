@@ -1,0 +1,28 @@
+@import 'src/styles/vars';
+
+// frame div gather the screen elements, including the Card component
+// the Card component is styled apart
+.frame {
+
+  // thick border of the screen
+  .border {
+    background-color: $screenBorder;
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+    margin-top: 1.5rem;
+    border: 1px solid $mainBorders;
+    border-radius: 0.5rem 0.5rem 0.5rem 1.5rem;
+
+    // screen styling (not the content, which is styled in Card)
+    .screen {
+      background-color: $screen;
+      width: 80%;
+      height: 80%;
+      margin: auto;
+      margin-top: 1.5rem;
+      border-radius: 0.5rem;
+      
+    }
+  }
+}
