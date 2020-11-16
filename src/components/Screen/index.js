@@ -7,7 +7,6 @@ const Screen = () => (
   <div className="frame">
     <div className="border">
       <div className="screen">
-        <Card />
       </div>
     </div>
   </div>

@@ -1,12 +1,18 @@
 import React from 'react';
+import { ArrowRightCircle } from 'react-feather';
 
 const Cross = () => (
   <div className="cross">
     <div className="buttons">
-      <button type="button" className="up">u</button>
-      <button type="button" className="down">d</button>
-      <button type="button" className="right">r</button>
-      <button type="button" className="left">l</button>
+      <div className="filler" />
+      <button type="button" className="cro up" />
+      <div className="filler" />
+      <button type="button" className="cro left" />
+      <div className="filler middle" />
+      <button type="button" className="cro right" />
+      <div className="filler" />
+      <button type="button" className="cro down" />
+      <div className="filler" />
     </div>
   </div>
 );

@@ -84,10 +84,97 @@
         }
       }
     }
+  }
 
-    // Right part styling 
-    .right {
-      
+  .commands {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+
+    // directional cross and ok button styling
+    .cross {
+
+      // in order to style a cross, I gather my buttons in a grid display
+      .buttons {
+        display: grid;
+        grid-template-columns: 2rem 2rem 2rem;
+        grid-template-rows: 2rem 2rem 2rem;
+        
+        // the ends of my cross are buttons
+        .cro {
+          background-color: $leftButtons;
+          border-style: none;
+
+          // what happens visually when we click the buttons
+          &:active {
+            border: none;
+
+          }
+
+        }
+
+        .left, .down, .right {
+          border-bottom: 4px solid black;
+
+        }
+
+        // I use filler blocks to design my cross
+        .filler {
+          width: 2rem;
+          height: 2rem;
+          
+        }
+
+        // this filler is different, it's the same color as my cross
+        .middle {
+          background-color: $leftButtons;
+
+        }
+      }
+
+      // this button allows the user to select what he wants
+      .ok {
+        margin-top: 0.5rem;
+
+        background: none;
+        border-style: none;
+        width: 2rem;
+        height: 2rem;
+
+        .arrow {
+          color: $screenBorder;
+          fill: $leftButtons;
+          width: 2rem;
+          height: 2rem;
+
+        }
+      }
+    }
+
+    // letters commands styling
+    .letters {
+      display: grid;
+      grid-template-columns: 2rem 2rem 2rem;
+      grid-template-rows: 2rem 2rem 2rem;
+
+      // letter buttons styling
+      .lett {
+        background-color: $leftButtons;
+        border: none;
+        border-radius: 50%;
+        color: $radarBorder;
+        border-bottom: 4px solid black;
+
+        // what letter buttons look like when clicked
+        &:active{
+          border: none;
+
+        }
+
+      }
+
     }
   }
+  
 }

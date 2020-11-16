@@ -1,9 +1,9 @@
 import React from 'react';
-import { CornerDownLeft } from 'react-feather';
 
 import Header from './Header';
 import Screen from 'src/components/Screen';
 import Cross from './Cross';
+import Letters from './Letters';
 import './leftpart.scss';
 
 const LeftPart = () => (
@@ -11,10 +11,10 @@ const LeftPart = () => (
     <Header />
     <div className="pokedisplay">
       <Screen />
-      <Cross />
-      <button type="button">
-        <CornerDownLeft />
-      </button>
+      <div className="commands">
+        <Cross />
+        <Letters />
+      </div>
     </div>
   </div>
 );
