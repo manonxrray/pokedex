@@ -8,7 +8,7 @@ const Research = () => (
     <form>
       <input type="text" placeholder="What Pokemon are you looking for ?" />
       <button type="submit" className="submit">
-        <Search />
+        <Search className="glass" />
       </button>
     </form>
   </div>

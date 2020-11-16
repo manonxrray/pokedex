@@ -1,0 +1,42 @@
+@import 'src/styles/vars';
+
+.research {
+  background-color: $mainColor;
+  overflow: hidden;
+
+  form {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    input {
+      margin-left: 0.5rem;
+      padding: 0.5rem;
+      width: 80%;
+      border: none;
+      border-radius: 0.2rem;
+      font-family: $mainFont;
+      font-size: 0.7rem;
+
+    }
+
+    .submit {
+      background: none;
+      border: none;
+      border-radius: 50%;
+      border-bottom: 4px solid $mainBorders;
+      margin-left: 0.2rem;
+      width: 2.5rem;
+      height: 2.5rem;
+
+      .glass {
+        color: $screenBorder;
+
+        &:active {
+          border: none;
+
+        }
+
+      }
+    }
+  }
+}
