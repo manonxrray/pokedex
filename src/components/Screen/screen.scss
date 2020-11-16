@@ -22,6 +22,30 @@
       margin: auto;
       margin-top: 1.5rem;
       border-radius: 0.5rem;
+
+      // styling the Pokemon list (main screen display)
+      .list {
+        color: $screenBorder;
+        font-family: $mainFont;
+        overflow: hidden;
+
+        .item {
+          display: flex;
+          margin-left: 0.2rem;
+          margin-top: 0.2rem;
+          margin-right: 0.2rem;
+          
+          &:hover {
+            background-color: $greenLight;
+            border-radius: 1rem;
+          }
+
+          .name {
+            text-transform: uppercase;
+            margin-left: 0.5rem;
+          }
+        }
+      }
       
     }
   }
